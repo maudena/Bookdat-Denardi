@@ -28,7 +28,7 @@ const Navbar = () => {
         <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
           <LogoContainer>
             <FaBook />
-            <p>The Book Store</p>
+            <p>BookDat</p>
           </LogoContainer>
 
           <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
