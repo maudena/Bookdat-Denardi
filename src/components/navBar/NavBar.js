@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import CartWidget from "./CartWidget";
+
 import {
   Container,
   LogoContainer,
@@ -9,14 +11,17 @@ import {
   MobileIcon,
 } from "./navBar.elements";
 import {
-  FaBook,
   FaBars,
   FaTimes,
-  FaHome,
-  FaUserAlt,
-  FaBriefcase,
-  FaGlasses,
 } from "react-icons/fa";
+
+import {
+  BsHouse,
+  BsBag,
+  BsBrush,
+  BsBook,
+} from "react-icons/bs";
+
 import { IconContext } from "react-icons";
 
 const Navbar = () => {
@@ -27,7 +32,7 @@ const Navbar = () => {
       <Wrapper>
         <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
           <LogoContainer>
-            <FaBook />
+            <BsBook />
             <p>BookDat</p>
           </LogoContainer>
 
@@ -39,7 +44,7 @@ const Navbar = () => {
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>
-                  <FaHome />
+                  <BsHouse />
                   HOME
                 </div>
               </MenuItemLink>
@@ -47,7 +52,7 @@ const Navbar = () => {
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>
-                  <FaUserAlt />
+                  <BsBag />
                   CATALOGO
                 </div>
               </MenuItemLink>
@@ -55,7 +60,7 @@ const Navbar = () => {
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>
-                  <FaBriefcase />
+                  <BsBrush />
                   AUTORES
                 </div>
               </MenuItemLink>
@@ -63,8 +68,7 @@ const Navbar = () => {
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>
-                  <FaGlasses />
-                  CARRITO
+                  <CartWidget/>
                 </div>
               </MenuItemLink>
             </MenuItem>

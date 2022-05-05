@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: #23394d; ;
 `;
 
@@ -23,7 +23,7 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  font-family: sans-serif;
+  font-family: 'Mandali', sans-serif;
   p {
     &:nth-child(2) {
       color: #fff;
@@ -49,7 +49,7 @@ export const Menu = styled.ul`
     background-color: #23394d;
     position: absolute;
     top: 70px;
-    left: ${({ open }) => (open ? "0" : "-100%")}; //Import
+    left: ${({ open }) => (open ? "0" : "-100%")};
     width: 100%;
     height: 90vh;
     justify-content: center;
@@ -77,7 +77,7 @@ export const MenuItemLink = styled.a`
   height: 100%;
   padding: 0.5rem 2.5rem;
   color: #64b2ff;
-  font-family: sans-serif;
+  font-family: 'Mandali', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   cursor: pointer;
@@ -99,7 +99,7 @@ export const MenuItemLink = styled.a`
     justify-content: center;
     align-items: center;
     svg {
-      display: none;
+      display: flex;
       fill: #e0792a;
       margin-right: 0.5rem;
     }
