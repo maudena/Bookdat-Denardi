@@ -1,0 +1,32 @@
+.containerCount{
+    display: flex;
+    justify-content: center;
+
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    border: solid 2px;
+    width: 4em;
+    background-color: white;
+    height: 1.3em;
+}
+
+.boton{
+    width: 2em;
+    justify-content: space-between;
+}
+.contador{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    width: 2em;
+    
+}
+
+.btnAgregarItem{
+    display: inline;
+
+}
